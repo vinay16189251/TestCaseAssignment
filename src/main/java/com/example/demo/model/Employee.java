@@ -17,6 +17,14 @@ public class Employee {
 	@Column
 	private String empRoll;
 
+	
+	public Employee(int id, String empName, String empRoll) {
+		super();
+		this.id = id;
+		this.empName = empName;
+		this.empRoll = empRoll;
+	}
+
 	public String getEmpName() {
 		return empName;
 	}

@@ -34,7 +34,7 @@ public class MainController {
 	}
 
 	@GetMapping("/get/{id}")
-	public Employee getById(@PathParam(value = "id") int id) {
+	public List<Employee> getById(@PathParam(value = "id") int id) {
 
 		return serviceImpl.getDetailsById(id);
 	}

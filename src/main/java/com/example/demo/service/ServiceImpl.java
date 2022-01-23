@@ -23,9 +23,9 @@ public class ServiceImpl {
 		return employeeRepo.findAll();
 	}
 
-	public Employee getDetailsById(int id) {
+	public List<Employee> getDetailsById(int id) {
 		// TODO Auto-generated method stub
-		return employeeRepo.getById(id);
+		return (List<Employee>) employeeRepo.findById(id);
 	}
 
 	public void deleteById(int id) {
